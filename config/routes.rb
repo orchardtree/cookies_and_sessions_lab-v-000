@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :products, only: [:index]
 
   get "/", to: 'products#homepage'
-  #post "/", to: 'products#add'
+  post "/", to: 'products#add'
 end
