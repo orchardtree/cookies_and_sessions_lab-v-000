@@ -1,6 +1,7 @@
 <%= form_tag '/products' %>
   <label for="name">Product:</label>
-  <input id="name" name="name" type="text" /></br>
+  <input id="product" name="product" type="text" /></br>
 </br>
   <%= f.submit "add to cart" %>
+  <input name="commit" data-disable-with="Save changes" type="submit" value="Save changes" />
 <% end %>
