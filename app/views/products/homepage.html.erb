@@ -1,11 +1,3 @@
-<%= form_tag '/products' %>
-  <label for="name">Product:</label>
-  <input type="text" id="product" name="product" /></br>
-</br>
-  <%= type="submit" value="add to cart" %>
-<% end %>
-
-
 <%= form_tag products_path do %>
   <label>Product:</label><br>
   <%= text_field_tag :'product' %><br>
