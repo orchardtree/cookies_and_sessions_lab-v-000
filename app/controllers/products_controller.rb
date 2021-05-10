@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
 
   private
   def product_params
+    binding.pry
     params.require(:product).permit(:product)
   end
 end
